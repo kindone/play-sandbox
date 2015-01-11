@@ -4,6 +4,8 @@
 
 # Home page
 GET     /                           controllers.Application.index
+GET     /hallojs                    controllers.Application.hallojs
 
 # Map static resources from the /public folder to the /assets URL path
+GET     /webjars/*file              controllers.WebJarAssets.at(file)
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

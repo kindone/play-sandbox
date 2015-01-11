@@ -1,0 +1,23 @@
+@(message: String)
+
+<html>
+    <head>
+        <title>hallojs</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" href="@routes.WebJarAssets.at(WebJarAssets.locate("jquery-ui.css"))">
+		<link rel="stylesheet" href="@routes.WebJarAssets.at(WebJarAssets.locate("font-awesome.css"))">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="@routes.WebJarAssets.at(WebJarAssets.locate("jquery-ui.min.js"))"></script>
+		<script src="http://rangy.googlecode.com/svn/trunk/currentrelease/rangy-core.js"></script>
+		<script src="/assets/javascripts/hallo.js"></script>
+    </head>
+    <body>
+    	<div id="hallo-test">
+    	</div>    
+
+
+    	<script type="text/javascript">
+    	</script>
+    </body>
+</html>
